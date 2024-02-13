@@ -1,0 +1,23 @@
+﻿@model Departamento
+
+<div class="container mt-5">
+    <h1>Detalles Departamento</h1>
+    
+    <p>
+        <a class="btn btn-primary" asp-controller="Departamentos" asp-action="Index">
+            Atras
+        </a>
+    </p>
+    
+    <ul class="list-group">
+        <li class="list-group-item">
+            Id Departamento: @Model.IdDepartamento
+        </li>
+        <li class="list-group-item">
+            Nombre: @Model.Nombre
+        </li>
+        <li class="list-group-item">
+            Localidad: @Model.Localidad
+        </li>
+    </ul>
+</div>
